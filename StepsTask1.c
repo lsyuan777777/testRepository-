@@ -54,9 +54,8 @@ int main() {
         FITNESS_DATA date1;
         strcpy(date1.date,date);
         strcpy(date1.time,time);
-//        int num = atoi(steps);
-//        date1.steps = num;
-        strcpy(date1.steps,steps);
+        int num = atoi(steps);
+        date1.steps = num;
         printf("%s/%s/%d",date1.date,date1.time,date1.steps);
         current_line += 1;
         printf("\n");
